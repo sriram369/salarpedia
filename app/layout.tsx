@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://salarpedia.com'),
   title: {
     default: 'SalaarPedia — The Complete Lore of Khansaar',
     template: '%s | SalaarPedia',

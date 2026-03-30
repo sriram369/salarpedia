@@ -310,6 +310,7 @@ export default function KhansaarMap() {
                 onMouseEnter={(e) => handleTerritoryEnter(territory, e)}
                 onMouseLeave={handleTerritoryLeave}
                 onMouseMove={handleTerritoryMove}
+                onTouchStart={(e) => handleTerritoryTap(territory, e)}
               />
             ))}
 
@@ -498,6 +499,7 @@ export default function KhansaarMap() {
             101 Provinces &bull; 3 Clans &bull; 1 Kingdom
           </span>
         </motion.div>
+        </div>{/* end min-w wrapper */}
       </motion.div>
 
       {/* Legend */}

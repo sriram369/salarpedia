@@ -336,7 +336,7 @@ export default function WorldPage() {
           The Hierarchy — 101 Provinces
         </h2>
         {/* Pyramid visual */}
-        <div className="flex flex-col items-center gap-2 mb-10">
+        <div className="flex flex-col items-center gap-2 mb-10 w-full">
           {hierarchy.map((tier, i) => (
             <motion.div
               key={tier.role}
@@ -346,8 +346,7 @@ export default function WorldPage() {
               transition={{ duration: 0.5, delay: i * 0.15 }}
               className="flex items-center justify-center text-center border"
               style={{
-                width: `${40 + i * 30}%`,
-                minWidth: '220px',
+                width: `clamp(280px, ${40 + i * 30}%, 100%)`,
                 padding: '16px 24px',
                 borderColor: tier.color + '30',
                 background: tier.color + '08',
